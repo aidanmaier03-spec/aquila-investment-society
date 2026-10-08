@@ -57,7 +57,15 @@ export function ContactForm() {
           <label htmlFor="contact-name" className={labelClass}>
             {form.fields.name}
           </label>
-          <input id="contact-name" name="name" type="text" autoComplete="name" required className={fieldClass} />
+          <input
+            id="contact-name"
+            name="name"
+            type="text"
+            autoComplete="name"
+            required
+            maxLength={100}
+            className={fieldClass}
+          />
         </div>
         <div>
           <label htmlFor="contact-email" className={labelClass}>
@@ -70,6 +78,7 @@ export function ContactForm() {
             autoComplete="email"
             inputMode="email"
             required
+            maxLength={254}
             className={fieldClass}
           />
         </div>
@@ -79,7 +88,14 @@ export function ContactForm() {
         <label htmlFor="contact-message" className={labelClass}>
           {form.fields.message}
         </label>
-        <textarea id="contact-message" name="message" rows={5} required className={`${fieldClass} resize-y`} />
+        <textarea
+          id="contact-message"
+          name="message"
+          rows={5}
+          required
+          maxLength={5000}
+          className={`${fieldClass} resize-y`}
+        />
       </div>
 
       {/* Honeypot for spam, hidden from people and assistive technology */}
