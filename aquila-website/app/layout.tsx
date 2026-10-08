@@ -67,9 +67,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {ui.skipLink}
         </a>
         {children}
+        {/* "<" is escaped so no value in the content file can ever close this script tag early. */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
         />
       </body>
     </html>

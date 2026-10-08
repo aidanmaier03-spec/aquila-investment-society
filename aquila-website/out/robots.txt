@@ -1,5 +1,0 @@
-User-Agent: *
-Allow: /
-
-Host: https://aquila-investment-society.vercel.app
-Sitemap: https://aquila-investment-society.vercel.app/sitemap.xml
