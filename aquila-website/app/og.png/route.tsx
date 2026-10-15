@@ -31,9 +31,8 @@ export async function GET() {
           alt=""
           style={{ position: "absolute", left: 290, top: 200 }}
         />
-        <div style={{ position: "absolute", left: 604, top: 222, display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 132, lineHeight: 1, letterSpacing: -4 }}>{site.shortName.toLowerCase()}</div>
-          <div style={{ fontSize: 44, marginTop: 22, letterSpacing: -1 }}>{site.nameSuffix.toLowerCase()}</div>
+        <div style={{ position: "absolute", left: 604, top: 252, fontSize: 124, lineHeight: 1, letterSpacing: -4 }}>
+          {site.shortName.toLowerCase()}
         </div>
         <div style={{ position: "absolute", left: 606, bottom: 60, fontSize: 30, fontWeight: 400, color: "#b81900" }}>
           {site.motto}

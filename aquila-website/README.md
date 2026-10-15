@@ -1,4 +1,4 @@
-# Aquila Investment Society
+# AntiBuble
 
 Single-page static site built with Next.js and Tailwind CSS.
 Sections: mission, founder, executive board, contact.

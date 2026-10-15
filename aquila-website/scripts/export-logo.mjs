@@ -1,4 +1,4 @@
-// Exports the Aquila mark as PNG files into /brand. Run: node scripts/export-logo.mjs
+// Exports the AntiBuble logo mark as PNG files into /brand. Run: node scripts/export-logo.mjs
 import { writeFile } from "node:fs/promises";
 import { createElement as h } from "react";
 import { ImageResponse } from "next/dist/compiled/@vercel/og/index.node.js";
@@ -30,6 +30,6 @@ async function render(file, { size, mark, color, background }) {
   console.log("wrote", file);
 }
 
-await render("brand/aquila-logo-red.png", { size: 1024, mark: 1024, color: RED });
-await render("brand/aquila-logo-white.png", { size: 1024, mark: 1024, color: "#ffffff" });
-await render("brand/aquila-linkedin-profile.png", { size: 400, mark: 280, color: RED, background: "#ffffff" });
+await render("brand/antibuble-logo-red.png", { size: 1024, mark: 1024, color: RED });
+await render("brand/antibuble-logo-white.png", { size: 1024, mark: 1024, color: "#ffffff" });
+await render("brand/antibuble-linkedin-profile.png", { size: 400, mark: 280, color: RED, background: "#ffffff" });
