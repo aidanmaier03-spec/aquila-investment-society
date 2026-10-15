@@ -47,7 +47,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: site.name,
-  alternateName: site.shortName,
+  ...(site.shortName !== site.name ? { alternateName: site.shortName } : {}),
   slogan: site.motto,
   url: site.url,
   logo: `${site.url}/icon.svg`,

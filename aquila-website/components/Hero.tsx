@@ -4,7 +4,7 @@ import { KeynotePanel, panelButton } from "./KeynotePanel";
 export function Hero() {
   return (
     <section aria-labelledby="hero-heading" className="bg-canvas">
-      <KeynotePanel headingId="hero-heading" title={site.shortName} subtitle={site.nameSuffix}>
+      <KeynotePanel headingId="hero-heading" title={site.shortName}>
         <a href={hero.primaryCta.href} className={panelButton.primary}>
           {hero.primaryCta.label}
           <span aria-hidden="true">→</span>

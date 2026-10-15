@@ -11,17 +11,18 @@
 // ---------------------------------------------------------------------------
 
 export const site = {
-  name: "Aquila Investment Society",
-  shortName: "Aquila",
-  nameSuffix: "Investment Society",
+  name: "AntiBuble",
+  shortName: "AntiBuble",
   motto: "Signum Ferimus",
   mottoTranslation: "We carry the standard",
-  // TODO: replace with the production domain before launch (used for SEO and Open Graph).
-  url: "https://aquila-investment-society.vercel.app",
+  // The live address, used for search results, link previews and the sitemap.
+  // It must also be added in Vercel (project > Settings > Domains). If you buy
+  // antibuble.com, add it in Vercel too and change this to "https://antibuble.com".
+  url: "https://antibuble.vercel.app",
   description:
-    "Aquila Investment Society is a selective, student-led investment society open to university and high school students anywhere, researching and managing a portfolio with discipline and rigorous risk control.",
+    "AntiBuble is a selective, student-led investment society open to university and high school students anywhere, researching and managing a portfolio with discipline and rigorous risk control.",
   keywords: [
-    "Aquila Investment Society",
+    "AntiBuble",
     "investment society",
     "student-led investment society",
     "student managed fund",
@@ -87,7 +88,7 @@ export const mission = {
   statement:
     "We research, debate and invest with the patience of long-term owners and the discipline of risk managers.",
   summary:
-    "Aquila is a selective, student-led investment society, open to university and high school students anywhere. Members research public equities, pitch to their peers and manage a portfolio under written risk rules.",
+    "AntiBuble is a selective, student-led investment society, open to university and high school students anywhere. Members research public equities, pitch to their peers and manage a portfolio under written risk rules.",
   objective: {
     label: "Our objective",
     statement:
@@ -113,8 +114,8 @@ export const founder = {
       "Aidan was born in Rome and grew up between Italy, South Africa and Nigeria, studying in the French education system before completing the International Baccalaureate Certificate Programme at St George’s in Rome.",
       "Aidan had an affinity for politics, which grew into a passion for markets and economics. To him, the two remain inseparable.",
       "Chairing Model United Nations conferences and goalkeeping for his football team taught him that leadership means staying composed under pressure and protecting what others entrust to you.",
-      "Aidan founded Aquila to build something from the ground up. Its name comes from the eagle standard of the Roman legion, which stood guard over the legion’s treasury. That remains the Society’s purpose: disciplined, patient stewardship of capital, measured honestly against the S&P 500.",
-      "He studies Accounting and Business Decisions at the W. P. Carey School of Business, with a minor in Construction Management, and speaks English, French and Italian. He intends to build a career in finance and in service, and Aquila is where that begins.",
+      "Aidan founded AntiBuble to build something from the ground up. Its purpose is disciplined, patient stewardship of capital, measured honestly against the S&P 500.",
+      "He studies Accounting and Business Decisions at the W. P. Carey School of Business, with a minor in Construction Management, and speaks English, French and Italian. He intends to build a career in finance and in service, and AntiBuble is where that begins.",
     ],
 };
 
@@ -209,7 +210,7 @@ export const contact = {
   linkedinLabel: "LinkedIn",
   // TODO: replace with the society's LinkedIn page URL.
   linkedin: "[LINK]",
-  linkedinText: "Aquila Investment Society",
+  linkedinText: "AntiBuble",
   form: {
     /**
      * FORMSPREE ENDPOINT: REPLACE BEFORE LAUNCH.
@@ -251,5 +252,5 @@ export const notFound = {
 export const footer = {
   // Must appear exactly as written.
   disclaimer:
-    "Aquila Investment Society is a student organisation for educational purposes. Nothing on this website constitutes an offer to sell or a solicitation of an offer to buy any security. Past performance is not indicative of future results.",
+    "AntiBuble is a student organisation for educational purposes. Nothing on this website constitutes an offer to sell or a solicitation of an offer to buy any security. Past performance is not indicative of future results.",
 };

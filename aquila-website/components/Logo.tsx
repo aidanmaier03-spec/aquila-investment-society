@@ -1,4 +1,5 @@
 import { useId } from "react";
+import { site } from "@/content/site";
 
 type LogoMarkProps = {
   className?: string;
@@ -7,11 +8,11 @@ type LogoMarkProps = {
 };
 
 /**
- * The Aquila mark: a solid disc with an "A" (Λ) cut clean through it.
+ * The logo mark: a solid disc with an "A" (Λ) cut clean through it.
  * The cut is a mask, so whatever sits behind the disc shows through.
  */
 export function LogoMark({ className, title }: LogoMarkProps) {
-  const maskId = `aquila-cut-${useId().replace(/:/g, "")}`;
+  const maskId = `logo-cut-${useId().replace(/:/g, "")}`;
   return (
     <svg
       viewBox="0 0 64 64"
@@ -38,7 +39,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <span className={`inline-flex items-center gap-2.5 ${className ?? ""}`}>
       <LogoMark className="h-7 w-7 text-red" />
-      <span className="text-[1.35rem] font-normal tracking-tight lowercase">aquila</span>
+      <span className="text-[1.35rem] font-normal tracking-tight lowercase">{site.shortName}</span>
     </span>
   );
 }
